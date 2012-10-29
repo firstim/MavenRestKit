@@ -3,7 +3,7 @@
 
 	<groupId>org.restkit.maven</groupId>
 	<artifactId>RestKit</artifactId>
-	<version>0.10.3</version>
+	<version>0.10.4-SNAPSHOT</version>
 	<packaging>xcode-lib</packaging>
 
 	<scm>
