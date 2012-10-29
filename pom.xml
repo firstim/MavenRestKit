@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.restkit.maven</groupId>
+	<artifactId>RestKit</artifactId>
+	<version>0.10.3-SNAPSHOT</version>
+	<packaging>xcode-lib</packaging>
+
+	<scm>
+		<connection>scm:git:git@github.com:firstim/MavenRestKit.git</connection>
+		<developerConnection>scm:git:git@github.com:firstim/MavenRestKit.git</developerConnection>
+		<url>https://github.com/firstim/MavenRestKit</url>
+	</scm>
+
+
+	<distributionManagement>
+		<repository>
+			<id>lixar-maven-repository</id>
+			<url>http://nexus.lixar.net/content/repositories/lixar-maven-repository/</url>
+		</repository>
+		<snapshotRepository>
+			<id>lixar-maven-snapshots</id>
+			<url>http://nexus.lixar.net/content/repositories/lixar-maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>lixar-maven-repository</id>
+			<url>http://nexus.lixar.net/content/repositories/lixar-maven-repository/</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.sap.prd.mobile.ios.mios</groupId>
+				<artifactId>xcode-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<extensions>true</extensions>
+				<!-- optional configurations, e.g. <configuration> <sdks> <sdk>iphonesimulator</sdk> 
+					<sdk>iphoneos</sdk> </sdks> <configurations> <configuration>Debug</configuration> 
+					<configuration>Release</configuration> </configurations> <configuration> -->
+			</plugin>
+		</plugins>
+	</build>
+</project>
